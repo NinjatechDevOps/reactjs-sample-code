@@ -1,0 +1,54 @@
+.page-404{
+  font-family: "Poppins", sans-serif;
+  .txt-sml{
+    font-size: 1.25rem;
+    color: $primary;
+    text-align: center;
+    font-weight: 700;
+  }
+  .txt-1{
+    font-size: 1.5rem;
+    color: #2b2e34;
+    text-align: center;
+    font-weight: 600;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .mid-img{
+    text-align: center;
+    img{
+      margin: 0 auto;
+    }
+  }
+  .btn-404{
+    text-align: center;
+    .btn{
+      font-size: 1rem;
+      font-weight: 500;
+      max-width: 194px;
+      width: 100%;
+      padding: 10px;
+      letter-spacing: 0.04rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-404 {
+    .txt-1{
+      font-size: 1.25rem;
+      padding-left: 12vw;
+      padding-right: 12vw;
+    }
+   }
+  }
+
+@media only screen and (max-width: 480px) {
+  .page-404 {
+    .txt-1{
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    }
+  }
+

@@ -1,0 +1,133 @@
+// category
+.category-sub-nav {
+  // max-width: 1310px;
+  margin: 0 20px;
+
+  .slick-prev,
+  .slick-next {
+    margin: -2px 0 0 0;
+  }
+
+  svg.slick-prev,
+  svg.slick-next {
+    path {
+      color: $secondary;
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    width: auto !important;
+  }
+
+  .close-svg {
+    position: relative;
+    top: -10px;
+    right: -6px;
+    height: 10px;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  .slick-initialized .slick-slide div li {
+    padding-right: 15px;
+  }
+
+  .slick-initialized .slick-slide li > a {
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .slick-list {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .btn-outline-primary:hover {
+    color: $primary;
+    background-color: #fff;
+    border-color: $primary;
+  }
+  // padding: .25rem .5rem;
+  // font-size: .875rem;
+}
+
+.category-title-text {
+  // max-width: 1000px;
+  margin: 10px auto;
+  text-align: center;
+  // padding: 0 4rem;
+  border-bottom: 1px solid #afa1a1;
+}
+
+.category-title-text h3 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 15px;
+  line-height: 39px;
+}
+
+.category-title-text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $dark;
+}
+
+.category-sub .season-main {
+  padding-top: 3rem;
+  // margin-top: 40px;
+  margin-bottom: 15px;
+  // border-top: 2px solid #afa1a1;
+  border-bottom: none;
+}
+
+.category-header-text span,
+.Description-tab {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.category-main .product-card__img {
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .category-sub-nav {
+    margin: 0;
+
+    .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+    .btn-primary,
+    .btn-outline-primary {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+
+    .close-svg {
+      top: -7px;
+      right: -5px;
+      height: 7px;
+    }
+
+    .slick-initialized .slick-slide div li {
+      padding-right: 10px;
+    }
+  }
+  .category-sub .season-main {
+    padding-top: 0.5rem;
+    margin-bottom: 10px;
+    border-bottom: none;
+  }
+  .category-main .season-main{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .category-main .season-main .col{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

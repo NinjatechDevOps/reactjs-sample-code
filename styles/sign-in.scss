@@ -1,0 +1,145 @@
+.sign-in {
+  margin-top: 3rem;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    font-weight: 500;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 8rem;
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .sign-in-box {
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px 40px;
+    height: 453px;
+    width: 784px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .or-text {
+    margin: 0px 20px;
+  }
+
+  .sign-in-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  p.help-text {
+    color: $dark;
+    padding: 20px 3.5rem;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .proceeding-text {
+    padding: 15px 70px;
+  }
+
+  .btn-primary {
+    padding: 7px 4rem;
+    box-shadow: 3px 3px 5px #00000029;
+  }
+
+  .btn-primary.register-button {
+    padding: 7px 2.5rem;
+    box-shadow: 3px 3px 5px #00000029;
+  }
+
+  .text-muted {
+    font-weight: normal !important;
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    border: none;
+    border-radius: 0;
+  }
+
+  label.form-check-label {
+    font-size: 14px;
+  }
+  
+}
+/* sign-in end */
+
+.forgot-pass{
+  .forgot-img {
+    text-align: center;
+  }
+  .form-control {
+    border:solid 1px #C1C1C1;
+    border-radius: 5px;
+  }
+  .forgot-pass-btn{
+    font-weight: 500;
+    padding: 7px 0.5rem;
+    box-shadow: 3px 3px 5px #00000029;
+    max-width: 194px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* media query start */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .sign-in {
+    margin-top: 1.5rem;
+    padding-bottom: 30px;
+
+    .sign-in-box {
+      // margin: 0 1rem;
+      height: auto;
+      .block-title{
+        font-size: 20px;
+      }
+    }
+
+    form {
+      padding: 0 0;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+
+    p.help-text {
+      padding: 20px 1rem;
+    }
+
+    .or-text {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    
+      
+  }
+  
+}

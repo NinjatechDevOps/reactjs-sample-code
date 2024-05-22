@@ -1,0 +1,53 @@
+.breadcrumbs {
+  margin-top: 25px;
+
+  .container {
+    padding: 0 10px !important;
+  }
+
+  ul {
+    margin: 0 !important;
+  }
+
+  li a {
+    position: relative;
+    font-size: 14px;
+    color: $dark;
+    padding-right: 15px;
+    font-weight: 500;
+  }
+
+  li a.disable {
+    cursor: auto;
+  }
+
+  li a:not(.disable):hover {
+    color: $primary !important;
+    // text-decoration: underline;
+    font-weight: 600;
+  }
+
+  li a:after {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    content: "\f105";
+    font-family: "FontAwesome";
+  }
+
+  li {
+    display: inline-block;
+    font-size: 13px;
+    color: $primary;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs {
+    margin-top: 5px;
+    li a {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.register {
+  margin-top: 3rem;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    font-weight: 500
+  }
+
+  form {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+
+  .register-box {
+    background: #F1F1F1;
+    border-radius: 5px;
+    padding: 20px 20px;
+    height: auto;
+    width: 784px;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .register-box span.or-text {
+    margin: 0px 20px;
+  }
+
+  p.help-text {
+    color: $dark;
+    padding: 20px 8.5rem;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .proceeding-text {
+    padding: 15px 70px;
+  }
+
+  .btn-primary {
+    padding: 8px 2rem;
+    box-shadow: 3px 3px 5px #00000029;
+    border-radius: 8px;
+  }
+
+  .text-muted {
+    font-weight: normal !important;
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    border: none;
+    border-radius: 0;
+  }
+
+  label.form-check-label {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .register {
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+
+    // .register-box {
+    //   margin: 0 1rem;
+    // }
+
+    form {
+      padding: 0 0;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+
+    p.help-text {
+      padding: 20px 1rem;
+    }
+  }
+}

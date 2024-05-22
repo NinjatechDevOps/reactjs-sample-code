@@ -1,0 +1,588 @@
+.header {
+  position: relative;
+  min-height: 90px;
+
+  .nav-wrapper {
+    padding-top: 10px;
+    &.sticky {
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 1111;
+      box-shadow: 0px 1px 6px #00000029;
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-inner .header-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    // z-index: -111;
+  }
+
+  .header-inner .header-logo {
+    width: 100px;
+    margin-right: 16px;
+  }
+
+  .header-logo > img {
+    max-width: 100px;
+  }
+
+  .logo-text {
+    font-size: 46px;
+    font-weight: bold;
+    margin: -20px 0 0 0;
+
+    .text-primary,
+    .text-secondary {
+      font-weight: bold;
+    }
+  }
+
+  .m-header-logo {
+    padding-bottom: 10px;
+    text-align: center;
+
+    img {
+      width: 33px;
+      margin-right: 5px;
+    }
+
+    .logo-text {
+      font-size: 21px;
+    }
+  }
+
+  .search {
+    position: relative;
+    display: flex;
+    width: 76%;
+    max-height: 36px;
+
+    .form-control {
+      border: 2px solid #000;
+      border-radius: 20px;
+      outline: none;
+      padding: 10px 40px 10px 14px;
+    }
+
+    .searchButton {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      border: 0;
+      background: transparent;
+      outline: 0;
+      height: 36px;
+      width: 30px;
+    }
+  }
+
+  .header-right {
+    width: 40%;
+    display: flex;
+    position: relative;
+    // left: 55px;
+    top: -8px;
+  }
+
+  .header-right .icn-signup svg {
+    max-width: 33px;
+    max-height: 36px;
+  }
+
+  .header-right .icn-basket img {
+    max-width: 41px;
+    max-height: 36px;
+  }
+
+  .header-signup {
+    // width: 40%;
+    display: flex;
+  }
+
+  .account-sec {
+    width: 33px;
+    text-align: center;
+    margin: 0 0 0 16px;
+  }
+
+  .account-sec a,
+  .basket-sec a {
+    max-height: 34px;
+    display: block;
+  }
+
+  .basket-sec {
+    width: 50px;
+    text-align: center;
+    margin: 0 0 0 16px;
+  }
+
+  .cls-1,
+  .cls-3 {
+    fill: none;
+  }
+
+  .cls-2 {
+    clip-path: url(#clip-path);
+  }
+
+  .cls-3 {
+    stroke: #000;
+    stroke-width: 1.9px;
+  }
+
+  .cls-3.active {
+    stroke: $primary;
+  }
+
+  /*Menu*/
+
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+    display: block;
+    margin: -30px 0 0 90px;
+    padding: 0 0 0 1rem;
+    position: static;
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .navbar .dropdown {
+    // float: left;
+    overflow: hidden;
+    position: static;
+    display: inline-block;
+  }
+
+  /* Dropdown button */
+  .navbar .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 0px 16px 4px;
+    background-color: inherit;
+    font-family: "Poppins", sans-serif;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    font-weight: 600;
+  }
+
+  .navbar .dropdown.show {
+    position: static;
+  }
+
+  /* Show the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .navbar .dropdown-content {
+    // display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 1210px;
+    height: 430px;
+    left: 9%;
+    box-shadow: 3px 3px 5px #00000029;
+    z-index: 1;
+    padding: 10px 30px 10px 35px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 10px 15px;
+    // height: 360px;
+    border-left: 1px solid #d9d9d9;
+  }
+
+  /* Style links inside the columns */
+  .column a {
+    float: none;
+    padding: 8px 0px 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  /* Add a background color on hover */
+  .column a:hover {
+    color: $primary;
+    // text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .column > h5 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .dropdown-content .menu-left-sec {
+    width: 78%;
+    float: left;
+  }
+
+  .dropdown-content .menu-right-sec {
+    width: 22%;
+    float: right;
+  }
+
+  .dropdown.show .dropbtn {
+    color: $primary;
+    // font-size: 20px;
+    transition: transform 300ms;
+
+    svg path {
+      color: $primary;
+    }
+  }
+
+  /*Basket CSS*/
+
+  .header-right .basket-box,
+  .header-right .user-dropdown-box {
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .user-dropdown-box .dropdown-inner {
+    box-shadow: 3px 3px 5px #00000029;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    width: 250px;
+    background-color: #fff;
+  }
+
+  .user-dropdown-box .btn-primary {
+    padding: 3px 22px;
+  }
+
+  .dropdown-inner > ul li.title {
+    display: flex;
+    padding: 10px 18px;
+    font-size: 18px;
+    color: $primary;
+  }
+
+  .dropdown-inner > ul li.item {
+    display: flex;
+    padding: 10px 18px;
+
+    img {
+      padding-right: 10px;
+      height: 20px;
+    }
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .dropdown-inner > ul li.item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .basket-box .basket-inner {
+    box-shadow: 3px 3px 5px #00000029;
+    z-index: 1;
+    padding: 18px;
+    position: absolute;
+    right: 0px;
+    top: -2px;
+    width: 365px;
+    background-color: #fff;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .search-inner > ul,
+  .dropdown-inner > ul,
+  .basket-inner > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .basket-inner > ul li.basket-item {
+    display: flex;
+    padding: 0 0 14px 0;
+  }
+
+  .basket-inner .basket-img > img {
+    max-width: 70px;
+    border-radius: 3px;
+  }
+
+  .basket-item .basket-img {
+    margin: 0 14px 0 0;
+  }
+
+  // .basket-item .basket-title-sec > h4 {
+  //   margin: 0 0 8px;
+  // }
+
+  .search-item .product-title-sec > h4 > a,
+  .basket-item .basket-title-sec > h4 > a {
+    color: $primary;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  .basket-title-sec .prd-qty {
+    display: block;
+    margin: 0 0 2px;
+    font-weight: 300;
+    font-size: 14px;
+    color: $dark;
+    float: left;
+  }
+
+  .basket-title-sec .prd-price {
+    font-weight: 500;
+    font-size: 14px;
+    color: $dark;
+    display: block;
+    position: absolute;
+  }
+
+  .basket-inner .total-sec {
+    text-align: right;
+    font-weight: 500;
+  }
+
+  .basket-inner .total-sec .total-amt {
+    color: $primary;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 0 0 40px;
+  }
+
+  .basket-box .basket-inner hr {
+    border-top: 2px solid #ddd;
+    margin: 10px 0 14px 0;
+  }
+
+  .basket-inner .basket-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0 0 0;
+  }
+
+  .basket-inner .basket-btn .btn {
+    padding: 6px 12px;
+    border: 2px solid $primary;
+    border-radius: 7px;
+    font-size: 14px;
+    text-decoration: none;
+    width: 115px;
+    display: block;
+    text-align: center;
+  }
+
+  .basket-inner .basket-btn .btn-primary {
+    margin-right: 12px;
+  }
+
+  /*End basket*/
+
+  @media (max-width: 1200px) {
+    .header-inner .header-left {
+      width: 60%;
+    }
+
+    .logo-text {
+      font-size: 32px;
+    }
+
+    .header-right {
+      width: 40%;
+    }
+
+    .navbar {
+      margin: -36px 0 0 5.5rem;
+    }
+
+    .header-right {
+      left: 12px;
+    }
+  }
+
+  .dropbtn {
+    svg {
+      height: 10px;
+      margin-left: 6px;
+    }
+  }
+
+  .account-sec .reminder-badge {
+    position: absolute;
+    right: 65px;
+    top: -5px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    background: $primary;;
+    color: white;
+    font-size: 10px;
+  }
+
+  .basket-sec .basket-count {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    background: $primary;
+    color: white;
+  }
+
+  .user-dropdown-box .reminder-link-badge {
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background: $primary;
+    color: white;
+    top: 68%;
+    left: 14px;
+    font-size: 10px;
+  }
+
+  .menu-right-sec {
+    padding-top: 15px;
+    margin-bottom: 20px;
+
+    img {
+      width: 234px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .search-product-box {
+    .search-inner {
+      box-shadow: 3px 3px 5px #00000029;
+      z-index: 1;
+      padding: 18px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 37px;
+      width: 365px;
+      background-color: #fff;
+      max-height: 500px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      border-bottom: 4px solid $primary;
+    }
+
+    .search-inner .search-item {
+      padding: 0 0 14px 0;
+    }
+
+    .search-item .prd-price {
+      font-weight: 500;
+      float: right;
+      color: $dark;
+    }
+
+    .search-inner .product-img > img {
+      max-width: 50px;
+      border-radius: 5px;
+      padding-right: 5px;
+    }
+
+    .btn {
+      padding: 5px 3rem;
+    }
+  }
+}
+
+.header-bottom {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: -15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .header {
+    box-shadow: 0px 1px 6px #00000029;
+    min-height: 55px;
+    .m-header-logo{
+      .logo-text {
+        padding-top: 26px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    }
+    .search {
+      margin-bottom: 10px;
+      width: auto !important;
+
+      .search-product-box {
+        .search-inner {
+          width: auto !important;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    padding: 6px;
+    margin-top: -4px !important;
+    margin-bottom: 0px !important;
+    p {
+      font-size: 9px !important;
+    }
+  }
+  .header .logo-text .text-primary, .header .logo-text .text-secondary {
+    font-size: 18px;
+  }
+}

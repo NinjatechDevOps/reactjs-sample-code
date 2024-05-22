@@ -1,0 +1,72 @@
+.personalization-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0;
+  .prs-hdr-left {
+    .back-to {
+      margin-right: 15px;
+      svg {
+        path {
+          fill: #9d9d9c;
+        }
+      }
+    }
+    .prs-logo {
+      width: 90px;
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+  .card-thumbs-block {
+    transform: translateX(-1.3vw);
+    .card-thumbs {
+      .card-item {
+        cursor: pointer;
+        -webkit-box-shadow: 0px 1px 6px #ccc;
+        box-shadow: 0px 1px 6px #ccc;
+        width: 75px;
+        height: 96px;
+        margin: 0 7px;
+        &.active {
+          -webkit-box-shadow: 0px 1px 6px #a31e5e;
+          box-shadow: 0px 1px 6px #a31e5e;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    .prev-card {
+      margin-right: 10px;
+      svg {
+        path {
+          fill: #9d9d9c;
+        }
+      }
+    }
+    .next-card {
+      margin-left: 10px;
+      svg {
+        path {
+          fill: #9d9d9c;
+        }
+      }
+    }
+  }
+  .prs-hdr-right {
+    padding: 0;
+    button {
+      margin: 5px 10px;
+      min-width: 150px;
+    }
+  }
+}
+.btn-lt-grey {
+  background-color: #f1f1f1;
+  color: $primary;
+}

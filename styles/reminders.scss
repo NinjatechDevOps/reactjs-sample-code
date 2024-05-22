@@ -1,0 +1,212 @@
+.react-datepicker-wrapper {
+  display: block;
+
+  .react-datepicker-popper {
+    padding-top: 25px;
+    margin-left: -35px;
+  }
+}
+
+.react-datepicker__month-container {
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    background-color: $primary;
+    border-radius: 3px;
+    color: #fff;
+  }
+}
+
+.react-datepicker__navigation-icon--previous,
+.react-datepicker__navigation-icon--next {
+  left: 0;
+  height: 20px;
+  color: $primary;
+  border: none;
+}
+
+.reminder-button {
+  .btn {
+    padding: 7px 4rem;
+  }
+  .btn.btn-outline-primary {
+    border: 2px solid $primary;
+    font-weight: 600;
+  }
+}
+
+.reminders {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+
+  .reminder-box {
+    margin: 1.5rem auto 0;
+    border-radius: 9px;
+    padding: 1rem;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
+    .reminder-block-title{
+      font-size: 1.125rem;
+    }
+    .col-lg-2 {
+      text-align: right;
+    }
+
+    svg {
+      cursor: pointer;
+      height: 18px;
+      font-size: 20px !important;
+
+      path {
+        color: $primary;
+      }
+    }
+
+    .reminder-title {
+      display: flex;
+
+      .calendar-icon {
+        margin-right: 1rem;
+        position: relative;
+        width: 75px;
+        img.calendar {
+          width: 75px;
+          height: 75px;
+        }
+        span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+        span.month {
+          top: 5px;
+          color: #fff;
+          text-transform: uppercase;
+        }
+        span.date {
+          font-size: 28px;
+          top: 22px;
+        }
+        span.day {
+          top: 52px;
+          text-transform: capitalize;
+          font-size: 12px;
+        }
+      }
+      .calendar-right{
+        flex-grow: 1;
+      }
+      p {
+        margin-top: 10px;
+      }
+
+      img.icon {
+        max-height: 30px;
+        padding-right: 7px;
+      }
+    }
+    .find-gift-btn {
+      padding: 7px 0.75rem;
+      width: 100%;
+      max-width: 190px;
+    }
+  }
+}
+.confirmation-modal .btn {
+	padding: 3px 1rem;
+	border: 2px solid $primary;
+  max-width: 158px;
+  width: 100%;
+}
+.modal-backdrop {
+	z-index: 1112;
+}
+
+@media only screen and (max-width: 768px) {
+  .reminder-button {
+    .btn.btn-primary {
+      padding: 7px 2.3rem;
+    }
+    .btn.btn-outline-primary {
+      padding: 7px 1.7rem !important;
+      border: 2px solid $primary;
+      font-weight: 600;
+    }
+  }
+
+  .reminders {
+    padding: 0.75rem 1rem 2rem 1rem;
+    margin-bottom: 2rem;
+
+    .reminder-box {
+      margin: 1rem auto 0;
+      border-radius: 5px;
+      padding: 0.75rem 0;
+
+      .find-gift-btn {
+        width: 100%;
+        max-width: 100%;
+      }
+      .edit-del-btns{
+        position: absolute;
+        top: 0;
+        right: 5px;
+        .edit-btn{
+          margin-right: 0.75rem!important;
+        }
+      }
+      .col-lg-2 {
+        margin-top: 10px;
+      }
+      .reminder-block-title{
+        line-height: 1.1;
+        font-size: 1rem;
+      }
+      .reminder-block-icon{
+        line-height: 1.1;
+        font-size: 14px;
+      }
+      .reminder-title {
+        .calendar-icon{
+          width: 64px;
+          min-width: 64px;
+          margin-right: 0.5rem;
+          img.calendar {
+            width: 64px;
+            height: 64px;
+          }
+          span.month {
+            top: 5px;
+            font-size: 12px;
+          }
+          span.date {
+            font-size: 20px;
+            top: 18px;
+          }
+          span.day {
+            top: 42px;
+            font-size: 13px;
+          }
+        }
+        .calendar-right{
+          padding-right: 3.25rem;
+        }
+      }
+      
+    }
+
+    .col-lg-12 {
+      .mt-5 {
+        margin-top: 0.7rem !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  
+}
+

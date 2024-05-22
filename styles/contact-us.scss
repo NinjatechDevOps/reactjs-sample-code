@@ -1,0 +1,55 @@
+.contact-us {
+  padding: 1.5rem 0;
+
+  .title {
+    font-size: 21px;
+    color: $primary;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+  }
+
+  .row {
+    margin-bottom: 1rem;
+  }
+
+  form {
+    .form-control {
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      font-size: 13px;
+      padding: 1.23rem 1rem;
+    }
+
+    ::placeholder {
+      color: #000000;
+    }
+  }
+}
+
+.location {
+  padding: 1.5rem 0;
+
+  .title {
+    font-size: 21px;
+    color: $primary;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+  }
+
+  .row {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-us{
+    .title {
+      text-align: center;
+    }
+  }
+  .location{
+    .title{
+      text-align: center;
+    }
+  }
+}
